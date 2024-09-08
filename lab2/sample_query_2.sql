@@ -1,3 +1,3 @@
 -- sample query 2
-SELECT * FROM albums;
+SELECT last_name, first_name FROM staff;
 

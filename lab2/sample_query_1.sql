@@ -1,3 +1,3 @@
 -- sample query 1
-SELECT * FROM artists;
+SELECT * FROM rooms WHERE is_available = true;
 
