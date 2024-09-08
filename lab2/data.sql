@@ -1,13 +1,3 @@
-INSERT INTO days_of_week (day_id, day_name, short_name)
-VALUES 
-    (1, 'Понеділок', 'Пн'),
-    (2, 'Вівторок', 'Вт'),
-    (3, 'Середа', 'Ср'),
-    (4, 'Четвер', 'Чт'),
-    (5, 'П`ятниця', 'Пт'),
-    (6, 'Субота', 'Сб'),
-    (7, 'Неділя', 'Нд');
+INSERT INTO artists (name) VALUES ('DJ Okawari'), ('Steely Dan'), ('Missy Elliott');
 
--- Вставка значень у таблицю днів тижня
-INSERT INTO staff (last_name, first_name, middle_name)
-VALUES ('Баранецький','Іван','Богданович');
+INSERT INTO albums (artist_id, title, released) VALUES (3, 'Under Construction', '2002-11-12');
