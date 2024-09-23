@@ -1,4 +1,4 @@
--- sample query 2
-SELECT last_name, first_name FROM staff;
+-- -	про клієнтів, які прибули із заданого міста
+SELECT * FROM guests WHERE city = 'Київ';
 
 

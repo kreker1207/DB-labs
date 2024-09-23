@@ -1,3 +1,3 @@
--- sample query 1
-SELECT * FROM rooms WHERE is_available = true;
+-- -	про клієнтів, які проживають у заданому номері
+SELECT * FROM guests WHERE room_id = 1;
 
