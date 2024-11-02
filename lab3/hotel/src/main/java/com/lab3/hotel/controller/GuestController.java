@@ -37,7 +37,7 @@ public class GuestController {
     }
 
     @GetMapping()
-    public List<GuestShortResponseDto> getAllGuests(@RequestBody GuestFilter filter) {
+    public List<GuestShortResponseDto> getAllGuests(GuestFilter filter) {
         return guestService.getAllGuests(filter);
     }
 

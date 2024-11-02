@@ -12,6 +12,5 @@ import lombok.NoArgsConstructor;
 public class ScheduleFilter {
     private Long staffId;
     private Long dayId;
-    private Integer floor;
     private Long roomId;
 }

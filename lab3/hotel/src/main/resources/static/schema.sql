@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS guests
     first_name      VARCHAR(50)  NOT NULL,
     middle_name     VARCHAR(50),
     city            VARCHAR(100) NOT NULL,
-    check_in_date   DATE,
+    check_in_date   TIMESTAMPTZ ,
     is_inhabited    BOOLEAN DEFAULT false,
     room_id         INT REFERENCES rooms (room_id)
 );

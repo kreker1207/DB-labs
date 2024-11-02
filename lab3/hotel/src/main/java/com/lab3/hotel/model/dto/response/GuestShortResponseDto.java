@@ -14,5 +14,6 @@ public class GuestShortResponseDto {
     private String firstName;
     private String lastName;
     private String passportNumber;
+    private String city;
     private boolean isInhabited;
 }

@@ -7,10 +7,10 @@ import com.lab3.hotel.model.dto.response.GuestShortResponseDto;
 import com.lab3.hotel.model.dto.response.RoomResponseDto;
 import com.lab3.hotel.model.entity.GuestEntity;
 import com.lab3.hotel.repository.GuestRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
@@ -85,7 +85,7 @@ public class GuestService {
                 .room(roomResponseDto)
                 .passportNumber(guestEntity.getPassportNumber())
                 .checkInDate(guestEntity.getCheckInDate())
-                .isInhabited(guestEntity.isInhabited())
+                .isInhabited(guestEntity.getIsInhabited())
                 .firstName(guestEntity.getFirstName())
                 .lastName(guestEntity.getLastName())
                 .middleName(guestEntity.getMiddleName())

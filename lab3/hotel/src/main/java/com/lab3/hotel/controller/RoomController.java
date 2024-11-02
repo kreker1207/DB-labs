@@ -27,7 +27,7 @@ public class RoomController {
     }
 
     @GetMapping()
-    public List<RoomShortResponseDto> getAllRooms(@RequestBody RoomFilter filter) {
+    public List<RoomShortResponseDto> getAllRooms(RoomFilter filter) {
         return roomService.getAllRooms(filter);
     }
     @GetMapping("/type/{id}")

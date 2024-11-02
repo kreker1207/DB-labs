@@ -19,6 +19,6 @@ public class GuestEntity {
     private String middleName;
     private String city;
     private OffsetDateTime checkInDate;
-    private boolean isInhabited;
+    private Boolean isInhabited;
     private Long roomId;
 }

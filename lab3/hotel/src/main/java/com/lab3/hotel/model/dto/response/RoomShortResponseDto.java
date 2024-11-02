@@ -17,6 +17,6 @@ public class RoomShortResponseDto {
     private BigDecimal pricePerDay;
     private String phoneNumber;
     private int floor;
-    private boolean isAvailable;
+    private Boolean isAvailable;
     private String type;
 }

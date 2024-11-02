@@ -7,10 +7,10 @@ import com.lab3.hotel.model.dto.response.RoomShortResponseDto;
 import com.lab3.hotel.model.dto.response.RoomTypeResponseDto;
 import com.lab3.hotel.model.entity.RoomEntity;
 import com.lab3.hotel.repository.RoomRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
@@ -34,7 +34,7 @@ public class RoomService {
                 .id(room.getId())
                 .floor(room.getFloor())
                 .type(roomType)
-                .isAvailable(room.isAvailable())
+                .isAvailable(room.getIsAvailable())
                 .number(room.getRoomNumber())
                 .phoneNumber(room.getPhoneNumber())
                 .pricePerDay(room.getPricePerDay())

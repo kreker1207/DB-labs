@@ -9,10 +9,10 @@ import com.lab3.hotel.model.dto.response.ScheduleShortResponseDto;
 import com.lab3.hotel.model.dto.response.StaffResponseDto;
 import com.lab3.hotel.model.entity.ScheduleEntity;
 import com.lab3.hotel.repository.ScheduleRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;

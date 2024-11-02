@@ -34,7 +34,7 @@ public class ScheduleController {
     }
 
     @GetMapping()
-    public List<ScheduleShortResponseDto> getAllSchedulesByFilters(@RequestBody ScheduleFilter filter) {
+    public List<ScheduleShortResponseDto> getAllSchedulesByFilters(ScheduleFilter filter) {
         return scheduleService.getAllSchedulesByFilters(filter);
     }
 

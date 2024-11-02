@@ -3,10 +3,10 @@ package com.lab3.hotel.service;
 import com.lab3.hotel.model.dto.request.StaffSaveRequestDto;
 import com.lab3.hotel.model.dto.response.StaffResponseDto;
 import com.lab3.hotel.repository.StaffRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
